@@ -1,28 +1,33 @@
-# Sizhe_mini_project_1_scaffold
-this is a project scaffold for python
+# IDS706 First assignment by Sizhe Chen
 
-[![Python Application Test with Github Actions]()
-## Template for Python projects 
+[![CI](https://github.com/nogibjj/Sizhe_mini_project_1_scaffold/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/Sizhe_mini_project_1_scaffold/actions/workflows/hello.yml)
 
-1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
+This repository contains my work for the Create Python GitLab Template assignment in IDS 706. To use it, simply link it to a GitHub codespace and wait for the devcontainer to run the Makefile, which will execute the following tasks: install, format, lint, and test.
 
-Things included are:
+This repository includes the following components:
+
+* `.devcontainer`
 
 * `Makefile`
 
-* `Pytest`
+* `requirements.txt`
 
-* `pandas`
-
-* `Pylint`
-
-* `Dockerfile`
-
-* `GitHub copilot`
-
-* `jupyter` and `ipython` 
-
-* A base set of libraries for devops and web
+* `README.md` 
 
 * `githubactions` 
 
+* `Dockerfile`
+
+## Purpose
+The purpose of this project is to have a Python template with a main.py file containing a function called is_even(number) that takes a number as input and checks if it’s even or odd. It returns “Even” if the number is even and “Odd” otherwise. The function is tested in the test_even.py file.
+
+## Preparation
+1. Open codespaces
+
+2. Load repo to code spaces
+
+3. Wait for the installation of all the requirements in requirements.txt
+
+4. Makefile code: `make all`
+
+![requirements](image.jpg)
