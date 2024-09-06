@@ -1,6 +1,6 @@
 # IDS706 First assignment by Sizhe Chen
 
-[![CI](https://github.com/nogibjj/Sizhe_mini_project_1_scaffold/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/Sizhe_mini_project_1_scaffold/actions/workflows/hello.yml)
+[![Python Application Test with Github Actions](https://github.com/nogibjj/Sizhe_mini_project_1_scaffold/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Sizhe_mini_project_1_scaffold/actions/workflows/cicd.yml)
 
 This repository contains my work for the Create Python GitLab Template assignment in IDS 706. To use it, simply link it to a GitHub codespace and wait for the devcontainer to run the Makefile, which will execute the following tasks: install, format, lint, and test.
 
