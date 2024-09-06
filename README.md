@@ -2,32 +2,44 @@
 
 [![Python Application Test with Github Actions](https://github.com/nogibjj/Sizhe_mini_project_1_scaffold/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Sizhe_mini_project_1_scaffold/actions/workflows/cicd.yml)
 
-This repository contains my work for the Create Python GitLab Template assignment in IDS 706. To use it, simply link it to a GitHub codespace and wait for the devcontainer to run the Makefile, which will execute the following tasks: install, format, lint, and test.
+This repository holds my work for the Create Python Template assignment in IDS 706. 
 
 This repository includes the following components:
 
-* `.devcontainer`
+* `.devcontainer/`: Contains the Docker configuration and environment settings for consistent development.
 
-* `Makefile`
+* `Makefile`: Defines commands for setup, testing, linting, and other tasks.
 
-* `requirements.txt`
+* `requirements.txt`: Lists the dependencies required for the project.
 
-* `README.md` 
+* `README.md`: This file contains an overview of the project.
 
-* `githubactions` 
+* `.github/actions/`: Contains the GitHub Actions configuration for CI/CD.
 
-* `Dockerfile`
+* `Dockerfile`: Used for building the Docker container for the project.
+
+* `LICENSE`: License for the project.
+
+* `hello.py`: Main Python script containing the core logic of the project.
+
+* `test_hello.py`: Test cases for verifying the functionality of `hello.py`.
 
 ## Purpose
-The purpose of this project is to have a Python template with a main.py file containing a function called is_even(number) that takes a number as input and checks if it’s even or odd. It returns “Even” if the number is even and “Odd” otherwise. The function is tested in the test_even.py file.
+The purpose of this project is to have a Python template with a hello.py file containing a function called add(x,y) that takes two numbers as input and add them together. 
 
 ## Preparation
-1. Open codespaces
 
-2. Load repo to code spaces
+To use this project:
 
-3. Wait for the installation of all the requirements in requirements.txt
+1. Open the repository in **GitHub Codespaces**.
+2. The environment will automatically configure itself using the `.devcontainer` setup.
 
-4. Makefile code: `make all`
+## Usage
+
+To run the project and execute the function `add`:
+
+1. Ensure that dependencies are installed:
+   ```bash
+   make install
 
 ![requirements](image.jpg)
