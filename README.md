@@ -1,45 +1,53 @@
-# IDS706 First assignment by Sizhe Chen
+# IDS706 mini project 12 by Sizhe Chen
 
-[![Python Application Test with Github Actions](https://github.com/nogibjj/Sizhe_mini_project_1_scaffold/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Sizhe_mini_project_1_scaffold/actions/workflows/cicd.yml)
+[![Build and Push Docker Image](https://github.com/nogibjj/Sizhe_Chen_mini_project_12/actions/workflows/build.yml/badge.svg)](https://github.com/nogibjj/Sizhe_Chen_mini_project_12/actions/workflows/build.yml)
 
-This repository holds my work for the Create Python Template assignment in IDS 706. 
+---
+title: "Flask Application Dockerization"
+author: "Sizhe Chen"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
+---
 
-This repository includes the following components:
+# Project Overview
 
-* `.devcontainer/`: Contains the Docker configuration and environment settings for consistent development.
+This project demonstrates the Dockerization of a Flask application and deployment using Docker. The application performs basic mathematical operations like addition and multiplication via HTTP requests.
 
-* `Makefile`: Defines commands for setup, testing, linting, and other tasks.
+---
 
-* `requirements.txt`: Lists the dependencies required for the project.
+# Project Files
 
-* `README.md`: This file contains an overview of the project.
+- `app.py`: Contains the Flask application code.
+- `Dockerfile`: Used to create the Docker image for the application.
+- `requirements.txt`: Lists the Python dependencies for the Flask application.
+- `Makefile`: Includes commands to build and run the Docker container easily.
 
-* `.github/actions/`: Contains the GitHub Actions configuration for CI/CD.
+---
 
-* `Dockerfile`: Used for building the Docker container for the project.
+```
+project-folder/
+│
+├── app.py
+├── Dockerfile
+├── requirements.txt
+├── Makefile
+├── .gitignore
+├── README.md
+├── image1.png
+├── image2.png
 
-* `LICENSE`: License for the project.
+```
+# Docker Commands Used
 
-* `hello.py`: Main Python script containing the core logic of the project.
+### Building the Docker Image
+```
+docker build -t image .
+```
+### Docker Build Output
+![Docker Build Output](image2.png)
 
-* `test_hello.py`: Test cases for verifying the functionality of `hello.py`.
-
-## Purpose
-The purpose of this project is to have a Python template with a hello.py file containing a function called add(x,y) that takes two numbers as input and add them together. 
-
-## Preparation
-
-To use this project:
-
-1. Open the repository in **GitHub Codespaces**.
-2. The environment will automatically configure itself using the `.devcontainer` setup.
-
-## Usage
-
-To run the project and execute the function `add`:
-
-1. Ensure that dependencies are installed:
-   ```bash
-   make install
-
-![requirements](image.jpg)
+### Docker Run Output
+![Docker Run Output](image1.png)
